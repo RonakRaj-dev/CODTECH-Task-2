@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Buzz - Share your creativity</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <img src="images/logo4.png" class="logo" />
+        <ul>
+          <li><img src="images/notification.png" alt="" /></li>
+          <li><img src="images/inbox.png" alt="" /></li>
+          <li><img src="images/video.png" alt="" /></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="images/search.png" alt="" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+          <img src="images/profile-pic.png"/>
+        </div>
+      </div>
+
+
+      <!-- --------------Settings--------------- -->
+      <div class="settings-menu">
+
+        <div id="dark-btn">
+          <span></span>
+        </div>
+
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="images/profile-pic.png" alt="" />
+            <div>
+              <p>John Nicholson</p>
+              <a href="#">See profile</a>
+            </div>
+          </div>
+          <hr>
+
+          <div class="user-profile">
+            <img src="images/feedback.png" alt="" />
+            <div>
+              <p>Feedback</p>
+              <a href="#">Give your feedback for improvement </a>
+            </div>
+          </div>
+          <hr>
+
+          <div class="settings-links">
+            <img src="images/setting.png" class="settings-icon">
+            <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="images/help.png" class="settings-icon">
+            <a href="#">Help & Support<img src="images/arrow.png" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="images/display.png" class="settings-icon">
+            <a href="#">Display & Accessibility<img src="images/arrow.png" width="10px"></a>
+          </div>
+          <div class="settings-links">
+            <img src="images/logout.png" class="settings-icon">
+            <a href="#">Logout<img src="images/arrow.png" width="10px"></a>
+          </div>
+
+        </div>
+        
+      </div>
+    </nav>
+
+    <div class="container">
+
+
+      <!-- --------------Left-sidebar--------------- -->
+      <div class="left-sidebar">
+        <div class="imp-links">
+          <a href="#"><i class="fas fa-newspaper"></i>Latest News</a>
+          <a href="#"><i class="fas fa-user-friends"></i>Friends</a>
+          <a href="#"><i class="fa fa-group"></i>Group</a>
+          <a href="#"><i class="fa fa-shopping-cart"></i>Marketplace</a>
+          <a href="#"><i class="material-icons">live_tv</i>Watch</a>
+          <a href="#">See More</a>
+        </div>
+        <div class="shortcut-links">
+          <p>Your Shortcuts</p>
+          <a href="#"
+            ><img src="/images/shortcut-1.png" alt="" />Web Developers</a
+          >
+          <a href="#"
+            ><img src="/images/shortcut-2.png" alt="" />Data Analysis Cheats</a
+          >
+          <a href="#"
+            ><img src="/images/shortcut-3.png" alt="" />Full Stack
+            Development</a
+          >
+          <a href="#"
+            ><img src="/images/shortcut-4.png" alt="" />Website Experts</a
+          >
+        </div>
+      </div>
+
+      <!-- --------------main content--------------- -->
+      <div class="main-content">
+        <div class="story-gallery">
+          <div class="story upload">
+            <img src="images/upload2.png" />
+            <p>Post Story</p>
+          </div>
+          <div class="story story1">
+            <img src="images/member-1.png" class="" />
+            <p>Marie Goldman</p>
+          </div>
+          <div class="story story2">
+            <img src="images/member-2.png" alt="" />
+            <p>Mike Henry</p>
+          </div>
+          <div class="story story3">
+            <img src="images/member-3.png" alt="" />
+            <p>Angelina Rose</p>
+          </div>
+          <div class="story story4">
+            <img src="images/member-4.png" alt="" />
+            <p>Andrew Burger</p>
+          </div>
+        </div>
+
+        <div class="write-post-container">
+          <div class="user-profile">
+            <img src="images/profile-pic.png" alt="" />
+            <div>
+              <p>John Nicholson</p>
+              <small>Public <i class="fas fa-angle-down"></i></small>
+            </div>
+          </div>
+
+          <div class="post-input-container">
+            <textarea rows="3" placeholder="What's on your mind ?"></textarea>
+            <div class="add-post-links">
+              <a href="#"><img src="images/live-video.png" /> Live Video </a>
+              <a href="#"><img src="images/photo.png" /> Photo/Video </a>
+              <a href="#"><img src="images/feeling.png" /> Feeling/Activity </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" alt="" />
+              <div>
+                <p>John Nicholson</p>
+                <span>June 24 2024, 13:30 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+
+          <p class="post-text">
+            Subscribe to <span>@CodeWithHarry</span> YouTube Channel to watch
+            more videos on python development and Web development.
+            <a href="#">#CodeWithHarry</a> <a href="#">#YouTubeIndia</a>
+          </p>
+          <img src="images/feed-image-1.png" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png" /> 20k</div>
+              <div><img src="images/comments.png" /> 500</div>
+              <div><img src="images/share.png" /> 500k</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" alt="" />
+              <div>
+                <p>John Nicholson</p>
+                <span>June 24 2024, 13:30 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+
+          <p class="post-text">
+            Recently got a new job as data analyst at <span>Google</span>. Happy
+            to share with you guys. It's my dream come true moment. I hope the
+            bright future in this company <a href="#">#Google</a>
+            <a href="#">#DataAnalyst</a>
+          </p>
+          <img src="images/feed-image-2.png" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like.png" /> 150k</div>
+              <div><img src="images/comments.png" /> 5k</div>
+              <div><img src="images/share.png" /> 10k</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" alt="" />
+              <div>
+                <p>John Nicholson</p>
+                <span>June 24 2024, 13:30 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+
+          <p class="post-text">
+            Friends are the family we choose, the ones who stand by us through
+            thick and thin, bringing joy, laughter, and unwavering support into
+            our lives. In the garden of life, friends are the flowers that add
+            color, fragrance, and beauty, making each day a little brighter.
+            <a href="#">#Friendship</a> <a href="#">#Friends</a>
+          </p>
+          <img src="images/feed-image-3.png" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like-blue.png" /> 500k</div>
+              <div><img src="images/comments.png" /> 100k</div>
+              <div><img src="images/share.png" /> 1M</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" alt="" />
+              <div>
+                <p>John Nicholson</p>
+                <span>June 24 2024, 13:30 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+
+          <p class="post-text">
+            Self-love is the foundation of a fulfilled life, where you honor
+            your worth and nurture your soul with kindness and compassion. Time
+            spent alone is a precious gift, a chance to reconnect with your true
+            self and find peace in your own company.
+            <a href="#">#SelfLove</a> <a href="#">#SpentTimeWithYourSelf</a>
+          </p>
+          <img src="images/feed-image-4.png" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like.png" /> 200k</div>
+              <div><img src="images/comments.png" /> 15k</div>
+              <div><img src="images/share.png" /> 50k</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-container">
+          <div class="post-row">
+            <div class="user-profile">
+              <img src="images/profile-pic.png" alt="" />
+              <div>
+                <p>John Nicholson</p>
+                <span>June 24 2024, 13:30 pm</span>
+              </div>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+          </div>
+
+          <p class="post-text">
+            Group discussions foster a dynamic exchange of ideas, where diverse
+            perspectives come together to create innovative solutions. Through
+            group discussions, individuals can refine their viewpoints,
+            challenge assumptions, and build consensus, driving collective
+            progress.
+            <a href="#">#GroupKnowledge</a>
+          </p>
+          <img src="images/feed-image-5.png" class="post-img" />
+
+          <div class="post-row">
+            <div class="activity-icons">
+              <div><img src="images/like.png" /> 10k</div>
+              <div><img src="images/comments.png" /> 10k</div>
+              <div><img src="images/share.png" /> 500</div>
+            </div>
+            <div class="post-profile-icon">
+              <img src="images/profile-pic.png" />
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" class="load-more-btn">Load More</button>
+      </div>
+
+      <!-- --------------Right-sidebar-------------- -->
+      <div class="right-sidebar">
+        <div class="sidebar-title">
+          <h4>Events</h4>
+          <a href="#">See All</a>
+        </div>
+
+        <div class="event">
+          <div class="left-event">
+            <h3>18</h3>
+            <span>March</span>
+          </div>
+
+          <div class="right-event">
+            <h4>Social Media</h4>
+            <p><i class="material-icons">location_on</i>Infocity Tech Park</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="left-event">
+            <h3>22</h3>
+            <span>July</span>
+          </div>
+          <div class="right-event">
+            <h4>web Development</h4>
+            <p><i class="material-icons">location_on</i>DLF Cybercity</p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+
+        <div class="sidebar-title">
+          <h4>Advertisement</h4>
+          <a href="#">Close</a>
+        </div>
+        <img src="images/advertisement.png" class="sidebar-ads" />
+
+        <div class="sidebar-title">
+          <h4>Converstation</h4>
+          <a href="#">Hide Chat</a>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="images/member-1.png" alt="" />
+          </div>
+          <p>Marie Goldman</p>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="images/member-2.png" alt="" />
+          </div>
+          <p>Mike Henry</p>
+        </div>
+
+        <div class="online-list">
+          <div class="online">
+            <img src="images/member-3.png" alt="" />
+          </div>
+          <p>Angelina Rose</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>&copy; Copyright 2024 - Social Buzz</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
